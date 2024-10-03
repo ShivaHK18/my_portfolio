@@ -108,7 +108,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <sonar.host.url>http://3.108.44.156:9000/</sonar.host.url>
+                <sonar.host.url>http://15.206.169.108:9000/</sonar.host.url>
             </properties>
         </profile>
      </profiles>
