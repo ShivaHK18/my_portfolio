@@ -32,8 +32,8 @@ pipeline {
     stage('Sonar Analysis') {
       steps {
         sh '''mvn sonar:sonar \
-        -Dsonar.host.url=http://13.235.242.184:9000/ \
-        -Dsonar.login=squ_0f880b8ca8f3a288e8ae2249eab904c5f055e032 \
+        -Dsonar.host.url=http://35.154.147.215:9000/ \
+        -Dsonar.login=squ_d37e5dca65cb48d05f12080a8221779afa7755f0 \
         -Dsonar.projectName=portfolio \
         -Dsonar.java.binaries=. \
         -Dsonar.projectKey=portfolio '''
