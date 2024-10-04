@@ -17,9 +17,15 @@ pipeline {
       }
     }
 
-    stage('Build') {
+    stage('Compile') {
       steps {
-        sh 'mvn clean package'
+        sh 'mvn clean compile'
+      }
+    }
+
+    stage('Test') {
+      steps {
+        sh 'mvn clean test'
       }
     }
 
@@ -31,6 +37,12 @@ pipeline {
         -Dsonar.projectName=portfolio \
         -Dsonar.java.binaries=. \
         -Dsonar.projectKey=portfolio '''
+      }
+    }
+
+    stage('Build') {
+      steps {
+        sh 'mvn clean package'
       }
     }
   }
